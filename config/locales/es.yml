@@ -69,6 +69,8 @@ es:
             width: Ancho
             height: Alto
       videos:
+        index:
+          shared_source: Embebido
         show:
           other: Otros Videos
   activerecord:

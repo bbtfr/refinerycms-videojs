@@ -68,6 +68,8 @@ pt-BR:
             width: Largura
             height: Altura
       videos:
+        index:
+          shared_source: Embutido
         show:
           other: Outros vídeos
   activerecord:

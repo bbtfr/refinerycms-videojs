@@ -69,6 +69,8 @@ zh-CN:
             width: 宽度
             height: 高度
       videos:
+        index:
+          shared_source: 内嵌
         show:
           other: 其他视频
   activerecord:

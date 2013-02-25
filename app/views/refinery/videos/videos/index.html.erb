@@ -1,0 +1,15 @@
+<% content_for :body do %>
+  <ul id="videos">
+    <% @videos.each do |video| %>
+      <li>
+        <%= link_to video.title, refinery.videos_video_path(video) %>
+        <span class='short_info'>(
+          <% video.short_info.each do |info| %>
+           <%= "#{t(info[0])}: #{info[1]}" %>
+        <% end %>)</span>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= render '/refinery/content_page' %>

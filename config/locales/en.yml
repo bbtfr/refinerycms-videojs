@@ -68,6 +68,8 @@ en:
             width: Width
             height: Height
       videos:
+        index:
+          shared_source: Embedded
         show:
           other: Other Videos
   activerecord:

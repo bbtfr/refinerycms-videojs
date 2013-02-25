@@ -68,6 +68,8 @@ sk:
             width: Šírka
             height: Výška
       videos:
+        index:
+          shared_source: Embedovaný
         show:
           other: Ďalšie videá
   activerecord:

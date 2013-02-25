@@ -67,6 +67,8 @@ ru:
             height: Высота
 
       videos:
+        index:
+          shared_source: Встроенное
         show:
           other: Другие видео
   activerecord:
