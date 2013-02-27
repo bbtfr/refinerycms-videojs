@@ -23,6 +23,7 @@ module Refinery
 
       def find_all_videos
         @videos = Video.order('position ASC')
+        @videos = @videos.paginate(:page => params[:page])
       end
 
       def find_page

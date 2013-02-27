@@ -19,7 +19,7 @@ module Refinery
       ################## Video config options
       serialize :config, Hash
       CONFIG_OPTIONS = {
-          :autoplay => "false", :width => "400", :height => "300",
+          :autoplay => "false", :width => "1000", :height => "540",
           :controls => "true", :preload => "true", :loop => "true"
       }
 
