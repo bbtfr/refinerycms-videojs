@@ -18,6 +18,10 @@
     $(function(){
         $('#submit_button').on('click', function(){
             $('#preview_form form').submit();
+            <% if @callback.present? %>
+              video_selected = $('#records ul li.selected').get(0);
+              self.parent.<%= @callback %>(video_selected);
+            <% end -%>
         })
     });
 

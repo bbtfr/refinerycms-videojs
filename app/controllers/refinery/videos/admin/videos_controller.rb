@@ -10,6 +10,7 @@ module Refinery
                 :sortable => true
 
         before_filter :set_embedded, :only => [:new, :create]
+        before_filter :init_dialog, :only => :insert
 
         def show
           @video = Video.find(params[:id])
@@ -44,6 +45,10 @@ module Refinery
         end
 
         private
+
+        def init_dialog
+          @callback = params[:callback]
+        end
 
         def paginate_videos
           @videos = @videos.paginate(:page => params[:page], :per_page => Video.per_page(true))
