@@ -32,7 +32,7 @@ zh-CN:
             use_embedded_video: 使用内嵌视频
           form:
             title: 标题
-            poster: 上传者
+            poster: 预览图片
             width: 宽度
             height: 高度
           file_fields:
